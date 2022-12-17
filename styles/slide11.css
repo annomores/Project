@@ -64,4 +64,89 @@
         font-size: 12px;
        
     }
+    
+    /* slide2 */
+    .slide2_grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .slide2_img_wrapper{
+        justify-content: start;
+    }
+    .slide2_item_body{
+        margin-left: 0;
+    }
+
+    /* slide3 */
+    .slide3_flexbox{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        position: relative;
+        z-index: 2;
+    }
+    .slide3_item{
+        width: 24%;
+    }
+
+    /* slide4 */
+    .slide4{
+        position: relative;
+    }
+    .slide4_container{
+        width: 30%;
+        min-width: 480px;
+        position: absolute;
+        left: 50%;
+        bottom: 15%;
+    }
+    .slide4_laptop{
+        width: 60%;
+        z-index: 1;
+    }
+    .slide4_flexbox{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .slide4_item{
+        width: 50%;
+    }
+
+
+    /* slide5 */
+    .slide5_flexbox
+    {
+        display: flex;
+
+        justify-content: space-around;
+    }
+    .slide5_tarif{
+        width: 33%;
+        height: 500px;
+        margin: 40px 15px;
+    }
+    .slide5_tarif:hover{
+        transform: scale(1.1);
+        box-shadow: 0 4px 60px rgb(162 162 162 / 25%);
+    }
+    .slide5_tarif:hover .slide5_tarif_ref{
+        background-color: var(--orange);
+        color: white;
+    }
+    .slide5_tarif_ref_reverse{
+        background-color: initial;
+        color: var(--orange);
+    }
+
+
+    /*slide6*/
+
+    .slide6_flexbox{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .slide6_item{
+        text-align: start;
+    }
   
