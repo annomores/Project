@@ -179,3 +179,29 @@
         padding: 320px 30px 10px 30px;
     }
   
+       /*footer*/
+    .telephone_ref{
+        font-size: 30px;
+        margin-top: 130px;
+    }
+    .telephone_ref::before
+    {
+        top: 12px;
+    }
+    .mail_ref{
+        font-size: 16px;
+    }
+    .footer{
+         margin-bottom: 0;
+    } 
+}
+@media (max-width: 1023px) {
+    .title_wrapper{
+        float: inherit;
+        margin: auto;
+    }
+    .video{
+        height: 100%;
+        width: auto;
+    }
+    
