@@ -149,4 +149,14 @@
     .slide6_item{
         text-align: start;
     }
+    
+    /*slide7*/
+    .slide7_grid{
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .slide7_button{
+        padding: 20px 70px;
+        max-width: 240px;
+    }
   
