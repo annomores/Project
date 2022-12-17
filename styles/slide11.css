@@ -204,4 +204,12 @@
         height: 100%;
         width: auto;
     }
+    .slide4_container{
+        position: static;
+        width: 100%;
+    }
+    .slide4_item{
+        max-width: 350px;
+    }
+}
     
