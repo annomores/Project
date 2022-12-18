@@ -138,6 +138,24 @@
     background-color: #e5e5e59f;
     margin: 60px -15px 60px -15px;
 }
+.net_ref{
+    display: flex;
+    margin-bottom: 15px;
+}
+.net_ref img{
+    margin-right: 10px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#agree_checkbox{
+display: none;
+}
+#agree_checkbox:checked + .custom_checkbox{
+    background-color: var(--orange);
+    border: 2px solid white;
+    color: white;
+}
 
 
 
