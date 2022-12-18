@@ -46,4 +46,45 @@ $(document).ready(function () {
 		} else {
 			$('body').addClass('_pc');
 		}
+	
+	
+	$(".ajaxForm").submit(function (e) { //Обработка данных формы
+		e.preventDefault();
+		let href = $(this).attr("action");
+		$.ajax({
+			type: "POST",
+			dataType: "json",
+			url: href,
+			data: $(this).serialize(),
+			success: function (response) {
+				if (response.status == "success") {
+					alert("Заявка отправлена!");
+					$('#myform')[0].reset();
+				} else {
+					alert("Произошла ошибка: " + response.message);
+
+				}
+			}
+		});
+	});
+
+	$('.question').each(function (index, element) { //развёртывание ответов в FAQ
+		$('.question_title', this).click(function () {
+			$('.question').each(function (index2, element2){
+				if((!$('.answer', element2).is(':hidden')))
+				{
+					$('.question_title', element2).css('color', '#000');
+					$(element2).css('outline-color', 'transparent');
+					$('.answer', element2).slideToggle(300);
+				}
+			});
+			if ($('.answer', element).is(':hidden')) {
+				$(this).css('color', 'var(--orange)');
+				$(element).css('outline-color', 'var(--orange)');
+				$('.answer', element).slideToggle(300);
+			}
+		});
+	});
+
+});
 		
