@@ -307,6 +307,20 @@
     .slide8_item_type1 .slide8_item_image{
         padding: 320px 30px 10px 30px;
     }
+     /*slide 11*/
+    .slide11 h2{
+        font-size: 42px;
+        text-align: start;
+    }
+    .slide11_container{
+        display: flex;
+    }
+    .slide11_description{
+        margin: initial;
+    }
+    .start{
+        height: 460px;
+    }
   
        /*footer*/
     .telephone_ref{
