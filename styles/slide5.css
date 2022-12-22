@@ -39,7 +39,8 @@
     font-size: 12px;
     margin-top: 40px;
     transition: all 300ms;
-    background-color: transparent;
+    background: url(/img/D-background.svg) 
+   background-color: transparent;
 }
 .slide5_tarif_ref_reverse{
     color: white;
