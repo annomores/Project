@@ -2,6 +2,8 @@
     color: var(--grey);
     background-color: #fff;
     padding-top: 60px;
+background: url(/img/D-background.svg) no-repeat right top, #fff;
+background-size: 58%;
 }   
 .slide5 h2{
     color: black;
@@ -43,12 +45,6 @@
    background-color: transparent;
 }
 
-.block_tariffs {
-padding: 160px 0 90px;
-font-family: Montserrat;
-background: url(/img/D-background.svg) no-repeat right top, #fff;
-background-size: 58%;
-}
 .slide5_tarif_ref_reverse{
     color: white;
     background-color: var(--orange);
