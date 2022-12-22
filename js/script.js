@@ -71,7 +71,7 @@ $(document).ready(function () {
 	});
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>
+
 	$(".ajaxForm").submit(function (e) { //Обработка данных формы
 		e.preventDefault();
 		let href = $(this).attr("action");
@@ -92,7 +92,7 @@ $(document).ready(function () {
 		});
 	});
 });
-</script>
+
 
 	$('.question').each(function (index, element) { //развёртывание ответов в FAQ
 		$('.question_title', this).click(function () {
