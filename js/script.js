@@ -46,7 +46,29 @@ $(document).ready(function () {
 		} else {
 			$('body').addClass('_pc');
 		}
-	
+	//слайдер
+	const slider = $('.slider');
+	const currentSlideNumber = $('.slide__current');
+
+	slider.slick({
+		appendArrows: ".slide__number",
+		adaptiveHeight: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear',
+		zIndex: 10,
+		mobileFirst: true,
+
+	});
+
+	//Начальные значения слайдера
+	currentSlideNumber.text((slider).slick('slickCurrentSlide') + 1);
+	$('.slide__length').text($('.slider__item').length);
+
+	//Смена значения при смене слайда
+	slider.on('afterChange', function (event, slick, currentSlide) {
+		currentSlideNumber.text((slider).slick('slickCurrentSlide') + 1);
+	});
 	
 	$(".ajaxForm").submit(function (e) { //Обработка данных формы
 		e.preventDefault();
