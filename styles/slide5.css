@@ -39,8 +39,15 @@
     font-size: 12px;
     margin-top: 40px;
     transition: all 300ms;
-    background: url(/img/D-background.svg) 
+    
    background-color: transparent;
+}
+
+.block_tariffs {
+padding: 160px 0 90px;
+font-family: Montserrat;
+background: url(/img/D-background.svg) no-repeat right top, #fff;
+background-size: 58%;
 }
 .slide5_tarif_ref_reverse{
     color: white;
