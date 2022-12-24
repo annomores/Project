@@ -21,6 +21,13 @@
     max-width: 420px;
     transition: all 500ms;
 }
+
+.slide8_item_image{
+    padding
+    background: no-repeat right top;
+    background-size: 58%;
+    
+}
 .slide5_tarif_title{
     color: var(--orange);
     font-size: 22px;
