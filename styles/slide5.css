@@ -22,12 +22,7 @@
     transition: all 500ms;
 }
 
-.slide5_item_image{
-    padding
-    background: no-repeat right top;
-    background-size: 58%;
-    
-}
+
 .slide5_tarif_title{
     color: var(--orange);
     font-size: 22px;
